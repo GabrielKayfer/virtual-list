@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>MyList</title>
+
+    <!-- Fontes -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap" rel="stylesheet"/>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Minha lista virtual</h1>
+            <button type="button" id="btn-nova-anotacao">Nova anotação +</button>
+        </header>
+
+        <form id="form-anotacao">
+            <input type="text" id="texto-anotacao" required placeholder="O que precisa lembrar?">
+            <button type="submit">Adicionar</button>
+            <button type="reset" id="botao-cancelar">Cancelar</button>
+        </form>
+
+        <ul id="lista-anotacoes"></ul>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- JS -->
+    <script src="./mains.js"></script>
+</body>
+</html>
