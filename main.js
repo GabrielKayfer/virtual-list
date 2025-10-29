@@ -35,6 +35,11 @@ $(document).ready(function(){
 
         item.find('.conteudo').text(texto);
 
+        // RISCAR TEXTO AO CLICAR
+        item.find('.conteudo').click(function () {
+            $(this).toggleClass('concluida');
+        });
+
         // Excluir
         item.find('.botao-excluir').click(function() {
             item.fadeOut(200, function() {
